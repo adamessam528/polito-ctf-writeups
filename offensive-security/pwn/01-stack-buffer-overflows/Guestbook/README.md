@@ -32,6 +32,7 @@ payload = flat(
 ## Files
 
 - `main.c` — challenge source
+- `Makefile` — build recipe (`-fno-stack-protector -no-pie -O0 -g`: no canary, fixed load address)
 - `guestbook` — compiled challenge binary
 - `solve.py` — working exploit (pwntools)
 
